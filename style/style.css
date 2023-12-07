@@ -1,0 +1,60 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.parent {
+	width: 100%;
+	height: 100vh;
+	background-color: aqua;
+	position: absolute;
+}
+.box {
+	width: 200px;
+	height: 200px;
+	background-color: brown;
+	animation-name: boxing;
+	animation-duration: 1.6s;
+	position: relative;
+	/* animation-fill-mode: forwards; */
+	animation-iteration-count: infinite;
+	top: 10px;
+	left: 100px;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+/* @keyframes boxing {
+	from {
+		top: 0px;
+	}
+	to {
+		top: 100px;
+	}
+} */
+
+@keyframes boxing {
+	0% {
+		background-color: blanchedalmond;
+		border-radius: 30px;
+	}
+	25% {
+		background-color: chartreuse;
+		left: 250px;
+		border-radius: 50px;
+	}
+	50% {
+		background-color: darkblue;
+		left: 500px;
+		border-radius: 70px;
+	}
+	75% {
+		background-color: darkorange;
+		left: 650px;
+		border-radius: 90px;
+	}
+	100% {
+		background-color: purple;
+		left: 900px;
+		border-radius: 100px;
+	}
+}
